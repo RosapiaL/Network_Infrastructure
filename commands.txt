@@ -1,0 +1,7 @@
+ In pc1, to create a tunnel between between pc1 ans s1:
+ 	$ ssh -NL 3000:200.0.2.1:1194 myuser1@200.0.1.5 -4
+
+Then,always in pc1, to connect pc1 to s2 via SSH:
+ 	$ openvpn client.conf
+	$ ssh myuser2@10.0.0.1
+
